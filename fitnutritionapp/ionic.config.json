@@ -1,0 +1,7 @@
+{
+  "name": "fitnutritionapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

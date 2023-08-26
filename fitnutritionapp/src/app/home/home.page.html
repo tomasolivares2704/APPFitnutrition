@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Profile -->
+  <div>
+
+    <br><br>
+    <ion-card color="light">
+      <img class="card-img"  alt="Silhouette of mountains" src="https://static.wixstatic.com/media/0348e8_b4a3db347a87495dbaf8f3f53656c131~mv2.jpg/v1/fill/w_640,h_346,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0348e8_b4a3db347a87495dbaf8f3f53656c131~mv2.jpg" />
+      <ion-card-header>
+        <ion-card-title>PROFILE</ion-card-title>
+      </ion-card-header>
+    
+    </ion-card><br>
+
+
+    <!-- Food --> 
+    
+    <ion-card color="warning">
+        <img class="card-img" [routerLink]="['/food']" src="https://www.eatthis.com/wp-content/uploads/sites/4/2023/01/healthy-foods.jpg?quality=82&strip=all&w=1200" />
+        <ion-card-header>
+          <ion-card-title>FOOD</ion-card-title>
+        </ion-card-header>
+    </ion-card>
+    <br>
+  
+
+    <!-- Training -->
+
+      <ion-card color="secondary">
+        <img class="card-img" alt="Silhouette of mountains" src="https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/11/Strength-training-programs.jpg?fit=1988%2C1327&ssl=1" />
+        <ion-card-header>
+          <ion-card-title>TRAINING</ion-card-title>
+        </ion-card-header>
+      
+      </ion-card><br>
+
+  </div>
+  <!-- FOOTER // TABS -->
+  
+  <ion-footer>
+    <ion-toolbar>
+      <app-tabs></app-tabs>
+    </ion-toolbar>
+  </ion-footer>
+  
+</ion-content>
