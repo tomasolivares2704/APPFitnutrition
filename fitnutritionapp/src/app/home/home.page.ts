@@ -10,9 +10,14 @@ export class HomePage {
 
   constructor(private router: Router){}
 
-
-  ngOnInit() {
-    
+  gotoFOOD(){
+    this.router.navigate(['/food'])
+  }
+  gotoHOME(){
+    this.router.navigate(['/home'])
+  }
+  gotoTRAINING(){
+    this.router.navigate(['/training'])
   }
 
 

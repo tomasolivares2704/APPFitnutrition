@@ -1,54 +1,102 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding">
 
-  <!-- Profile -->
-  <div>
-
-    <br><br>
-    <ion-card color="light">
-      <img class="card-img"  alt="Silhouette of mountains" src="https://static.wixstatic.com/media/0348e8_b4a3db347a87495dbaf8f3f53656c131~mv2.jpg/v1/fill/w_640,h_346,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0348e8_b4a3db347a87495dbaf8f3f53656c131~mv2.jpg" />
-      <ion-card-header>
-        <ion-card-title>PROFILE</ion-card-title>
-      </ion-card-header>
-    
-    </ion-card><br>
-
-
-    <!-- Food --> 
-    
-    <ion-card color="warning">
-        <img class="card-img" [routerLink]="['/food']" src="https://www.eatthis.com/wp-content/uploads/sites/4/2023/01/healthy-foods.jpg?quality=82&strip=all&w=1200" />
-        <ion-card-header>
-          <ion-card-title>FOOD</ion-card-title>
-        </ion-card-header>
-    </ion-card>
-    <br>
-  
-
-    <!-- Training -->
-
-      <ion-card color="secondary">
-        <img class="card-img" alt="Silhouette of mountains" src="https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/11/Strength-training-programs.jpg?fit=1988%2C1327&ssl=1" />
-        <ion-card-header>
-          <ion-card-title>TRAINING</ion-card-title>
-        </ion-card-header>
-      
-      </ion-card><br>
-
+  <div class="logo-container">
+    <div class="logo-text"><span class="logo-highlight">Fit</span>Nutrition <span class="logo-highlight2">APP</span></div>
   </div>
-  <!-- FOOTER // TABS -->
+
+  <!-- Primera columna con perfil -->
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <p>Profile</p>
+          </ion-col>
+          <ion-col size="8" style="text-align: left;">
+            
+            <p>Nombre: Test Testing</p>
+            <p>Email: Testing@example.com</p>
+            <p>Objetivo: Disminuir % de Grasa Corporal</p>
+          </ion-col>
+          
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
   
-  <ion-footer>
-    <ion-toolbar>
-      <app-tabs></app-tabs>
-    </ion-toolbar>
-  </ion-footer>
   
+
+
+  <!-- Segunda fila con dos columnas -->
+  <ion-grid>
+    <ion-row>
+      <!-- Columna 1 - Comida -->
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content (click)="gotoFOOD()">
+            <ion-icon name="fast-food-outline"></ion-icon>
+            <p>Comida</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Columna 2 - Training -->
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content (click)="gotoTRAINING()">
+            <ion-icon name="fitness-outline"></ion-icon>
+            <p>Training</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Tercera tarjeta - Estadísticas de Entrenamiento -->
+<ion-card>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="5">
+          <ion-icon name="barbell-outline"></ion-icon>
+          <p>Estadísticas</p>
+        </ion-col>
+        <ion-col size="7" style="text-align: left;">
+          <p>Ejercicios realizados: 45</p>
+          <p>Calorías quemadas: 350</p>
+          <p>Último entrenamiento: 30 min</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+
+  <!-- Última fila con progreso diario de metas -->
+  <div class="progress-container">
+    <ion-label class="progress-label">Progreso diario de metas</ion-label>
+    <ion-progress-bar class="progress-bar" value="0.75"></ion-progress-bar>
+    <ion-label class="progress-value">75%</ion-label>
+  </div>
+
+
+
+
 </ion-content>
+
+<!-- FOOTER // TABS -->
+  
+<ion-footer>
+  <ion-toolbar>
+    <app-tabs></app-tabs>
+  </ion-toolbar>
+</ion-footer>

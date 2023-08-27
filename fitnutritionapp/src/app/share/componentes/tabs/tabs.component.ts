@@ -16,6 +16,9 @@ export class TabsComponent  implements OnInit {
   gotoHOME(){
     this.router.navigate(['/home'])
   }
+  gotoTRAINING(){
+    this.router.navigate(['/training'])
+  }
 
 
 

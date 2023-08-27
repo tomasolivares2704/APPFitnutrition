@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-training',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrainingPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router){}
+
+  gotoCROSSFIT(){
+    this.router.navigate(['training/croosfit'])
+  }
+  gotoYOGA(){
+    this.router.navigate(['home/home'])
+  }
+  gotoPESAS(){
+    this.router.navigate(['training/pesas'])
+  }
+  gotoRUTINAS(){
+    this.router.navigate(['training/rutinas'])
+  }
+
 
   ngOnInit() {
+    
   }
+
 
 }

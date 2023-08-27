@@ -1,10 +1,105 @@
-#divcard1{
-    background-color: #e3ee49;
-    
+/* Agrega este estilo en tu archivo de estilos .scss */
+
+/* Estilo para el contenido general */
+ion-content {
+    --ion-background-color: #8fbbaf;
+  }
+  
+  /* Estilo para los cards */
+  ion-card {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para los íconos en los cards */
+  ion-icon {
+    font-size: 48px;
+    color: #333333;
+  }
+  
+  /* Estilo para los textos en los cards */
+  ion-card-content p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666666;
+  }
+  
+  
+  /* Estilo para el encabezado */
+  ion-header {
+    --ion-background-color: #333333;
+    color: #ffffff;
+  }
+  
+  /* Estilo para el título en el encabezado */
+  ion-title {
+    font-size: 24px;
+  }
+  
+  /* Estilo para la barra de herramientas en el encabezado */
+  ion-toolbar {
+    --ion-color-primary: #8fbbaf;
+  }
+  
+  /* ... Otros estilos ... */
+  
+  /* Estilo para el contenedor de la barra de progreso */
+  .progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para la etiqueta de la barra de progreso */
+  .progress-label {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para la barra de progreso */
+  .progress-bar {
+    --background: #e0e0e0;
+    --buffer-background: #9e9e9e;
+    --buffer-background-color: #9e9e9e;
+    --progress-background: #acdeaa;
+  }
+  
+  /* Estilo para el valor de la barra de progreso */
+  .progress-value {
+    font-size: 24px;
+    color: #6b7b8b;
+    margin-top: 10px;
+  }
+  /* LOGOTIPO */
+  
+  .logo-container {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .logo-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fafcfe;
+    text-transform: uppercase;
+  }
+  
+  .logo-subtext {
+    font-size: 18px;
+    color: #666666;
+  }
+  
+  /* LOGO COLOR FIT*/
+.logo-highlight {
+  color: #d71919; /* Cambia el color según tu preferencia */
 }
-
-#img1{
-    border-radius: 10%;
-    object-fit: cover;
-
+/* LOGO COLOR APP*/
+.logo-highlight2 {
+  color: #d7d119; /* Cambia el color según tu preferencia */
 }
