@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rutinas.page.scss'],
 })
 export class RutinasPage implements OnInit {
+  selectedTime: string = ''; // Aquí almacenaremos el tiempo seleccionado
 
   constructor() { }
 
