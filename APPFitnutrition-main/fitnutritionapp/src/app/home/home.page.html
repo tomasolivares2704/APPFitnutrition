@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="logo-container">
+    <div class="logo-text"><span class="logo-highlight">Fit</span>Nutrition <span class="logo-highlight2">APP</span></div>
+  </div>
+
+  <!-- Primera columna con perfil -->
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <p>Profile</p>
+          </ion-col>
+          <ion-col size="8" style="text-align: left;">
+            
+            <p>Nombre: Test Testing</p>
+            <p>Email: Testing@example.com</p>
+            <p>Objetivo: Disminuir % de Grasa Corporal</p>
+          </ion-col>
+          
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  
+  
+
+
+  <!-- Segunda fila con dos columnas -->
+  <ion-grid>
+    <ion-row>
+      <!-- Columna 1 - Comida -->
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content (click)="gotoFOOD()">
+            <ion-icon name="fast-food-outline"></ion-icon>
+            <p>Comida</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Columna 2 - Training -->
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content (click)="gotoTRAINING()">
+            <ion-icon name="fitness-outline"></ion-icon>
+            <p>Training</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Tercera tarjeta - Estadísticas de Entrenamiento -->
+<ion-card>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="5">
+          <ion-icon name="barbell-outline"></ion-icon>
+          <p>Estadísticas</p>
+        </ion-col>
+        <ion-col size="7" style="text-align: left;">
+          <p>Ejercicios realizados: 45</p>
+          <p>Calorías quemadas: 350</p>
+          <p>Último entrenamiento: 30 min</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+
+  <!-- Última fila con progreso diario de metas -->
+  <div class="progress-container">
+    <ion-label class="progress-label">Progreso diario de metas</ion-label>
+    <ion-progress-bar class="progress-bar" value="0.75"></ion-progress-bar>
+    <ion-label class="progress-value">75%</ion-label>
+  </div>
+
+
+
+
+</ion-content>
+
+<!-- FOOTER // TABS -->
+  
+<ion-footer>
+  <ion-toolbar>
+    <app-tabs></app-tabs>
+  </ion-toolbar>
+</ion-footer>
