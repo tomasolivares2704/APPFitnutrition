@@ -26,7 +26,7 @@ export class TrainingPage implements OnInit {
   }
 
   gotoCROSSFIT() {
-    this.router.navigate(['training/crossfit']); // Corregido aquí (croosfit -> crossfit)
+    this.router.navigate(['training/croosfit']); // Corregido aquí (croosfit -> crossfit)
   }
   
   gotoYOGA() {
