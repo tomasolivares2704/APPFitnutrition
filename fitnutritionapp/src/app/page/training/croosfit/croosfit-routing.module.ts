@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: CroosfitPage
+  },
+  {
+    path: 'cross-ejercicios',
+    loadChildren: () => import('./cross-ejercicios/cross-ejercicios.module').then( m => m.CrossEjerciciosPageModule)
   }
 ];
 
